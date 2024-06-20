@@ -1,0 +1,50 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #000; /* Ajusta el color según tu diseño */
+  }
+  
+  .logo {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .menu-icon {
+    width: 25px; /* Ajusta el tamaño según sea necesario */
+    cursor: pointer;
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  li {
+    margin: 0 1rem;
+  }
+  
+  a {
+    color: #fff; /* Ajusta el color según tu diseño */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: transparent; /* Hace que el fondo sea transparente */
+    position: absolute; /* Ajusta la posición si es necesario */
+    width: 100%; /* O ajusta el ancho según tus necesidades */
+    z-index: 1000; /* Asegura que el Navbar esté por encima del contenido */
+  }
+  

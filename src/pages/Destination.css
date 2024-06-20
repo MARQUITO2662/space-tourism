@@ -1,0 +1,38 @@
+/* Estilos generales para el contenedor .destination */
+.destination {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Estilos específicos para diferentes tamaños de pantalla */
+  @media (min-width: 1024px) {
+    .destination {
+      background-image: url('../images/destination/background-destination-desktop.jpg');
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .destination {
+      background-image: url('../images/destination/background-destination-tablet.jpg');
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .destination {
+      background-image: url('../images/destination/background-destination-mobile.jpg');
+    }
+  }
+  
+  /* Estilos para las imágenes individuales */
+  .destination-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .destination-images img {
+    width: 100%;
+    height: auto;
+  }
+  

@@ -1,0 +1,56 @@
+/* src/pages/Technology.css */
+.technology {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  @media (min-width: 1024px) {
+    .technology {
+      background-image: url('../images/technology/background-technology-desktop.jpg');
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .technology {
+      background-image: url('../images/technology/background-technology-tablet.jpg');
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .technology {
+      background-image: url('../images/technology/background-technology-mobile.jpg');
+    }
+  }
+  
+  .technology-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  
+  .landscape,
+  .portrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .landscape img,
+  .portrait img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
