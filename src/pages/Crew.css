@@ -1,48 +1,114 @@
-/* src/pages/Crew.css */
 .crew {
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+  position: relative;
+  height: 100vh;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .crew {
+    background-image: url('../images/crew/background-crew-desktop.jpg');
   }
-  
-  .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .crew {
+    background-image: url('../images/crew/background-crew-tablet.jpg');
   }
-  
-  @media (min-width: 1024px) {
-    .crew {
-      background-image: url('../images/crew/background-crew-desktop.jpg');
-    }
+}
+
+@media (max-width: 767px) {
+  .crew {
+    background-image: url('../images/crew/background-crew-mobile.jpg');
   }
-  
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .crew {
-      background-image: url('../images/crew/background-crew-tablet.jpg');
-    }
+}
+
+.crew-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 100px 2rem 0; /* Ajusta según la altura de tu Navbar */
+  text-align: left;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+h1 .highlight {
+  color: gray; /* Color plomo (gris) */
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: gray; /* Color gris */
+}
+
+.astronaut-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  margin-top: 2rem; /* Baja más el contenido */
+}
+
+.text-content {
+  max-width: 600px;
+  margin-bottom: 2rem; /* Baja más el contenido */
+}
+
+.image-content img {
+  max-width: 400px;
+  height: auto;
+  margin-top: 2rem;
+  margin-left: auto; /* Mueve la imagen más a la derecha */
+}
+
+.buttons {
+  margin-top: 2rem; /* Baja más los botones */
+  display: flex;
+  gap: 1rem; /* Espacio entre los botones */
+}
+
+.circle-button {
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.circle-button.active {
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .astronaut-info {
+    flex-direction: row;
   }
-  
-  @media (max-width: 767px) {
-    .crew {
-      background-image: url('../images/crew/background-crew-mobile.jpg');
-    }
+
+  .text-content {
+    max-width: 50%;
+    margin-right: 2rem;
   }
-  
-  .astronauts {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
+
+  .image-content img {
+    max-width: 400px;
   }
-  
-  .astronauts img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-  }
-  
+}
